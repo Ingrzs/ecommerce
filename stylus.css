@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-self: center;
+    
 }
 
 .box_search input {
@@ -40,4 +40,13 @@ width: 85%;
  border: 1px solid #2A7AE4;
  width: 182px;
  height: 51px;
+}
+
+.box_section_banner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_section_banner img{
+    width: 100%;
+    height: 352px;
 }
