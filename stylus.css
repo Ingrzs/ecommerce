@@ -69,17 +69,31 @@ color: white;
     
 }
 
-.box_start{
+.container_start{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .box_start_title{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.box_start img{
-    width: 300px;
-    height: 300px;
+.box_start_elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box_elements{
+    width: 200px;
+    height: 250px;
+    border:1px solid red;
+}
+
+.box_elements img{
+    width: 150px;
+    height: 150px;
 }
