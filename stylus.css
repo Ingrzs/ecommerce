@@ -73,6 +73,9 @@ color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border: 1px solid red;
+    position: relative;
+    bottom: 130px;
 }
 
 .box_start_title{
@@ -86,6 +89,7 @@ color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .box_elements{
     width: 200px;
