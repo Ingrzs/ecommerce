@@ -75,7 +75,7 @@ color: white;
     flex-wrap: wrap;
     border: 1px solid red;
     position: relative;
-    bottom: 130px;
+    bottom: 150px;
 }
 
 .box_start_title{
@@ -93,7 +93,7 @@ color: white;
 }
 .box_elements{
     width: 200px;
-    height: 250px;
+    height: 230px;
     border:1px solid red;
 }
 
@@ -104,4 +104,9 @@ color: white;
 
 .box_elements p{
     line-height: 15%;
+}
+
+.container_start a {
+ color: #2A7AE4;
+ text-decoration: none;   
 }
