@@ -68,3 +68,18 @@ color: white;
     height: 51px;
     
 }
+
+.box_start{
+    display: flex;
+    flex-direction: column;
+}
+
+.box_start_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.box_start img{
+    width: 300px;
+    height: 300px;
+}
