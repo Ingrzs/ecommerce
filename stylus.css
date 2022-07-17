@@ -117,3 +117,6 @@ color: white;
  text-decoration: none;   
 }
 
+.container_footer{
+    display: flex;
+}
