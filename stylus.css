@@ -120,36 +120,78 @@ color: white;
 .footer{
     display: flex;
     justify-content: center;
+    background-color:  #EAF2FD;;
+    
 }
 .container_footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     border: 1px solid black;
     width: 70%;
-    
+    justify-content: center;
+
 }
 
 .box_informacion{
     border: 1px solid yellow;
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 45%;
     flex-wrap: wrap;
+    
+    
 }
 .box_informacion img{
-    width: 120px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
     border: 1 px solid black;
 }
 
-.box_formulario_footer{
-    width:30%;
+.box_formulario_footer {
+width: 500px;
+
 }
 .box_formulario_footer form{
-    
     border: 1px solid pink;
     display: flex;
     flex-direction: column;
-
+    margin-left: 10px;
 }
+
+.box_formulario_footer input{
+    width: 400px;
+    height: 46px;
+    outline: none;
+    border: none;
+}
+input:hover{
+    border: 1px solid #2A7AE4;
+}
+input::placeholder{
+    position: relative;
+    bottom: 10px;
+}
+
+textarea{
+    display: block;
+    width: 400px;
+    height: 66px;
+    margin-top: 20px;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+textarea:hover{
+    border: 1px solid #2A7AE4; 
+}
+
+.btnenviar{
+    display: block;
+    margin-top: 20px;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #2A7AE4;  
+ }
