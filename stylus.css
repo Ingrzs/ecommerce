@@ -53,6 +53,7 @@ width: 100%;
 .box_banner{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .box_banner img{
     width: 100%;
@@ -62,7 +63,7 @@ width: 100%;
 .box_banner_text{
     position: relative;
     bottom: 200px;
-    padding-left: 5%;
+    width: 70%;
     margin-bottom: -200px;
 }
 
@@ -75,6 +76,7 @@ color: white;
     color: white;
     width: 129px;
     height: 51px;
+    border: none;
     
 }
 
