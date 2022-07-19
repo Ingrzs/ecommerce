@@ -130,7 +130,8 @@ color: white;
 .footer{
     display: flex;
     justify-content: center;
-    background-color:  #EAF2FD;;
+    background-color:  #EAF2FD;
+    padding-top: 3%;
     
 }
 .container_footer{
@@ -221,6 +222,7 @@ textarea:hover{
     }
     .box_header_nav{
         justify-content: space-between;
+        width: 100%;
     }
     .box_search{
         width: 10%;
