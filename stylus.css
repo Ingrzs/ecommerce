@@ -129,7 +129,7 @@ color: white;
     border: 1px solid black;
     width: 70%;
     justify-content: center;
-
+    
 }
 
 .box_informacion{
@@ -144,7 +144,6 @@ color: white;
 .box_informacion img{
     width: 150px;
     height: 50px;
-    border: 1 px solid black;
 }
 
 .box_formulario_footer {
@@ -194,4 +193,14 @@ textarea:hover{
     width: 120px;
     height: 40px;
     border: 1px solid #2A7AE4;  
+ }
+
+ .autor_footer{
+    display: flex;
+    justify-content: center;
+ }
+
+ .autor p{
+    text-align: center;
+    line-height: 5%;
  }
