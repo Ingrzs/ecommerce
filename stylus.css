@@ -214,3 +214,10 @@ textarea:hover{
     text-align: center;
     line-height: 5%;
  }
+
+ @media screen and (max-width:640px){
+    .box_header_nav .box_search{
+        order: 3;
+    }
+    
+ }
