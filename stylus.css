@@ -219,5 +219,17 @@ textarea:hover{
     .box_header_nav .box_search{
         order: 3;
     }
-    
+    .box_header_nav{
+        justify-content: space-between;
+    }
+    .box_search{
+        width: 10%;
+    }
+    .box_search input{
+        display: none;
+    }
+
+    .box_search button{
+        width: 100%;
+    }
  }
