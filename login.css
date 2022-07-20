@@ -25,7 +25,7 @@ body{
     background-color: #F5F5F5;
     border-radius: 20px;
     height: 40px;
-    width: 40%;
+    width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,14 +38,14 @@ body{
 border: none;
 background-color: transparent;
 outline: none;
-width: 210px;
+width: 300px;
 border: 1px solid blue;
 }
 
 .box_search form button{
     border: none;
     background-color: transparent;
-    width: 45px;
+    width: 65px;
     border: 1px solid coral;
 }
 
