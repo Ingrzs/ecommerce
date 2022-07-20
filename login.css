@@ -25,7 +25,7 @@ body{
     background-color: #F5F5F5;
     border-radius: 20px;
     height: 40px;
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,18 +34,21 @@ body{
     
 }
 
+.box_search form{
+    width: 100%;
+}
 .box_search form input {
 border: none;
 background-color: transparent;
 outline: none;
-width: 300px;
+width: 70%;
 border: 1px solid blue;
 }
 
 .box_search form button{
     border: none;
     background-color: transparent;
-    width: 65px;
+    width: 20%;
     border: 1px solid coral;
 }
 
