@@ -59,6 +59,19 @@ width: 70%;
     align-self: center;
 }
 
+.box_title h2{
+    color: #464646;
+}
+
+.box_title button{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #2A7AE4;  
+    align-self: center;
+}
+
 .box_elementos{
     display: flex;
     flex-wrap: wrap;
