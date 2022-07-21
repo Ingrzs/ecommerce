@@ -62,14 +62,17 @@ width: 70%;
 .box_elementos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 70%;
     align-self: center;
+    gap: 1rem;
 }
 
 .elementos{
-    width: 150px;
+    width: 140px;
     height: 200px;
     border: 1px solid red;
+    
 }
 
 .elementos > img{
