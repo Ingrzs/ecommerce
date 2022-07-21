@@ -45,3 +45,38 @@ width: 70%;
     background-color: transparent;
     width: 25%;
 }
+
+.container_productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.box_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-self: center;
+}
+
+.box_elementos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-self: center;
+}
+
+.elementos{
+    width: 150px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.elementos > img{
+    width: 120px;
+    height: 120px;
+}
+
+.elementos p {
+    line-height: 15%;
+}
