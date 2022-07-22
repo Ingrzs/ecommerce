@@ -67,7 +67,7 @@ width: 100%;
     margin-bottom: -200px;
 }
 
-.box_banner_text h1,h3{
+.box_banner_text h1,.box_banner_text h3{
 color: white;
 }
 
