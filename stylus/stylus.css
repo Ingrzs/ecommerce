@@ -10,7 +10,7 @@ body{
 
 }
 
-.box_header_nav{
+.box_header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ body{
    
 }
 
-.box_search{
+.box_search {
     background-color: #F5F5F5;
     border-radius: 20px;
     height: 40px;
@@ -29,17 +29,26 @@ body{
     align-items: center;
     
 }
-
-.box_search input {
+.box_search form{
+    width:100%;
+}
+.box_search form input {
 border: none;
 background-color: transparent;
 outline: none;
-width: 100%;
+width: 70%;
 }
 
-.box_search button{
+.box_search form button{
     border: none;
     background-color: transparent;
+    width: 25%;
+}
+
+title{
+    font-size: 14px;
+    background-color: transparent;
+    color:rebeccapurple;
 }
 
 .box_header_nav > button{
