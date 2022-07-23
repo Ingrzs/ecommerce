@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a3e517dd97.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./stylus/stylus.css">
+    <link rel="stylesheet" href="./stylus/addproducto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
     
     <title>Agregar</title>
@@ -22,10 +22,24 @@
               <button type="submit" title="Buscar producto"> <i class="fa-solid fa-magnifying-glass"></i></button>
               </form> 
               </div>
-               <button class="btnlogin" type="submit" title="Iniciar Sesion">Menu Administrador</button>
-              
+               <button class="btnlogin" type="submit" title="Iniciar Sesion">Menu Administrador</button> 
               </div>
         </header>
-      </div>   
+      </div>
+      <section>
+        <div class="container_addproducto">
+          <div class="box_add">
+            <form action="">
+              <h2>Agregar nuevo producto</h2>
+              <input type="text" placeholder="Url de Imagen" required>
+               <input type="text" placeholder="Categoria" required>
+               <input type="text" placeholder="Nombre de producto" required>
+               <input type="number" placeholder="Precio de producto" required>
+               <textarea placeholder="Descripcion" required></textarea>
+               <button type="submit">Agregar producto</button>
+            </form>
+          </div>
+        </div>
+ </section>   
 </body>
 </html>
