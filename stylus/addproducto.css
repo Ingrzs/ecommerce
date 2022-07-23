@@ -97,7 +97,7 @@ section{
     color: #E5E5E5;
 }
 
-textarea{
+.box_add textarea{
     display: block;
     width: 423px;
     height: 66px;
@@ -108,6 +108,93 @@ textarea{
     box-shadow: 2px 7px 3px 0px rgba(0,0,0,0.09);
 }
 
+.box_add textarea:hover{
+    border: 1px solid #2A7AE4; 
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color:  #EAF2FD;
+    padding-top: 3%;
+    
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    
+}
+
+.box_informacion{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    flex-wrap: wrap;
+    
+}
+.box_informacion img{
+    width: 150px;
+    height: 50px;
+}
+
+.box_formulario_footer {
+width: 500px;
+
+}
+.box_formulario_footer form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.box_formulario_footer input{
+    width: 400px;
+    height: 46px;
+    outline: none;
+    border: none;
+}
+.box_formulario_footer input:hover{
+    border: 1px solid #2A7AE4;
+}
+.box_formulario_footer input::placeholder{
+    position: relative;
+    bottom: 10px;
+}
+
+textarea{
+    display: block;
+    width: 400px;
+    height: 66px;
+    margin-top: 20px;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
 textarea:hover{
     border: 1px solid #2A7AE4; 
 }
+
+.btnenviar{
+    display: block;
+    margin-top: 20px;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #2A7AE4;  
+ }
+
+ .autor_footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ .autor p{
+    text-align: center;
+    line-height: 5%;
+ }
