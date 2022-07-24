@@ -242,23 +242,27 @@ textarea:hover{
     }
  }
 
-
+.div_lista{
+    display: none;
+}
  .div_lista{
-    list-style: none;
-    border: 1px solid red;
-    padding: 15px 15px;
     font-size: 25px;
     position: relative;
-    top: 10px;
-    right: 80px;
-    margin-bottom: -10px;
-    margin-left: -80px;
- }
+    right: 50px;
+    margin-left: -45px;
+    top: 50px;
+    margin-bottom: -45px;
+    height: 100px;
+    background-color: #F5F5F5;
+    overflow:auto ; 
+}
 
  .lista{
-    border: 1px solid black;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
  }
 
  .lista-item{
-    border: 1px solid green;
+    border: 2px solid white;
  }
