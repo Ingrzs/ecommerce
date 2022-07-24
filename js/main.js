@@ -50,9 +50,25 @@ function searchbar(array){
     searchbar(filterNames);
  }
 
+function ocultar(ocu){
+    ocu.style.display= "none"
+}
+ 
+function mostrar(show){
+    show.style.display = "block"
+}
 
-    
+let vistalista = document.querySelector(".div_lista")
+let inputsearch = document.querySelector(".searchbar")
+let vistaform = document.querySelector(".formu")
 
+inputsearch.addEventListener('click',function(){
+mostrar(vistalista)
+})
+
+vistaform.addEventListener('mousemove',function(){
+    ocultar(vistalista)
+})
 
 
 
