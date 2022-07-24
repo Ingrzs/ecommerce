@@ -241,3 +241,24 @@ textarea:hover{
         width: 100%;
     }
  }
+
+
+ .div_lista{
+    list-style: none;
+    border: 1px solid red;
+    padding: 15px 15px;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    right: 80px;
+    margin-bottom: -10px;
+    margin-left: -80px;
+ }
+
+ .lista{
+    border: 1px solid black;
+ }
+
+ .lista-item{
+    border: 1px solid green;
+ }
