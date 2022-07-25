@@ -49,6 +49,7 @@ width: 70%;
     background-color: transparent;
     width: 25%;
     margin-left: 4%;
+    cursor: pointer;
 }
 
 title{
@@ -63,6 +64,7 @@ title{
  border: 1px solid #2A7AE4;
  width: 182px;
  height: 51px;
+ cursor:pointer;
 }
 
 .box_banner{
@@ -92,6 +94,7 @@ color: white;
     width: 129px;
     height: 51px;
     border: none;
+    cursor: pointer;
     
 }
 
@@ -213,7 +216,8 @@ textarea:hover{
     color: #FFFFFF;
     width: 120px;
     height: 40px;
-    border: 1px solid #2A7AE4;  
+    border: 1px solid #2A7AE4;
+    cursor: pointer;  
  }
 
  .autor_footer{
