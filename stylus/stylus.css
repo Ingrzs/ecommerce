@@ -18,19 +18,24 @@ body{
     width: 70%;
    
 }
-
+.logo{
+    cursor: pointer;
+}
 .box_search {
     background-color: #F5F5F5;
     border-radius: 20px;
     height: 40px;
     width: 30%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    gap: .5rem;
     
 }
 .box_search form{
     width:100%;
+    display: flex;
+    flex-direction: row;
 }
 .box_search form input {
 border: none;
@@ -43,6 +48,7 @@ width: 70%;
     border: none;
     background-color: transparent;
     width: 25%;
+    margin-left: 4%;
 }
 
 title{
@@ -243,18 +249,15 @@ textarea:hover{
  }
 
 .div_lista{
-    display: none;
+display: none;
 }
- .div_lista{
-    font-size: 25px;
-    position: relative;
-    right: 50px;
-    margin-left: -45px;
-    top: 50px;
-    margin-bottom: -45px;
-    height: 100px;
+ .box_search .div_lista{
     background-color: #F5F5F5;
-    overflow:auto ; 
+    display: inline-block;
+    z-index: 2;
+    width: 100%;
+    border-radius: 4px;
+    
 }
 
  .lista{
@@ -263,6 +266,4 @@ textarea:hover{
     margin: 0%;
  }
 
- .lista-item{
-    border: 2px solid white;
- }
+ 
