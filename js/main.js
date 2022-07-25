@@ -29,10 +29,10 @@ div.appendChild(ul);
 let li = document.createElement("li");
 li.className= "lista-item";
 ul.appendChild(li);
-li.textContent= "a"
+li.textContent= ""
 
-let di= document.querySelector(".box_search");
-di.appendChild(div);
+let cajadeldom= document.querySelector(".box_search");
+cajadeldom.appendChild(div);
 
 
 function searchbar(array){
