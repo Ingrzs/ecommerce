@@ -14,7 +14,7 @@
     <div class="container_header">
         <header>
           <div class="box_header_nav">
-            <img src="./assets/Logo.png" alt="">
+            <img class="logo" src="./assets/Logo.png" alt="logo">
               <div class="box_search">
                <form action=""><input type="text" placeholder="Que deseas buscar?">
                 <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
@@ -26,11 +26,11 @@
         <section>
            <div class="container_login">
              <div class="box_login">
-               <form action="">
+               <form action="" method="post">
                  <h2>Iniciar Sesion</h2>
-                 <input type="email" placeholder="Escriba su correo electronico" required>
-                  <input type="password" placeholder="Escriba su contraseña" required>
-                  <button type="submit">Entrar</button>
+                 <input class="usermail" type="email" placeholder="Escriba su correo electronico" required>
+                  <input class="userpassword" type="password" placeholder="Escriba su contraseña" required>
+                  <button class="btnlog" type="submit">Entrar</button>
                </form>
              </div>
            </div>
@@ -72,4 +72,5 @@
       </div>
    </footer>
 </body>
+<script src="./js/login.js"></script>
 </html>
