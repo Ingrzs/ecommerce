@@ -7,6 +7,10 @@ let vistaform = document.querySelector(".formu")
 
 const ListaProductos = ["consola","nintendo","play","xbox","control","laptop","celular","start","funko"]
 
+/**
+ * It opens a new page.
+ * @param url - The URL of the page to open.
+ */
 function Openpage(url){
     window.location = url
 }
@@ -23,7 +27,8 @@ BtnConsola.addEventListener("click",function(){
     Openpage("./productos.html")
 })
 
-//creacion del div en el DOM
+
+/* Creating a div, ul, and li element and appending them to the DOM. */
 let div = document.createElement("div");
 div.className="div_lista";
 let ul = document.createElement("ul");
@@ -38,7 +43,12 @@ li.textContent= ""
 let cajadeldom= document.querySelector(".box_search");
 cajadeldom.appendChild(div);
 
-//funcion para buscar el valor en el array y mostrarlo en el div creado
+
+/**
+ * It takes an array as an argument, loops through it, and creates a list item for each element in the
+ * array.
+ * @param array - the array of strings to be displayed in the list
+ */
 function searchbar(array){
     let liElemet = "" ;
     for (let i= 0; i < array.length; i++) {
@@ -47,6 +57,12 @@ function searchbar(array){
     document.querySelector(".lista").innerHTML= liElemet;
  }
  
+ /**
+  * It takes the value of the search bar and filters the list of products to only show the ones that
+  * contain the value of the search bar.
+  * @param event - The event object is a JavaScript event that is sent to an element when an event
+  * occurs.
+  */
  function filtrar(event) {
     var searchvalue = event.target.value;
     var filterNames = ListaProductos.filter((v)=>{ return(v.includes(searchvalue));
@@ -54,7 +70,11 @@ function searchbar(array){
     searchbar(filterNames);
  }
 
- //funciones ocultar o mostrar  
+ 
+/**
+ * If the element has a display value of none, then change it to block, otherwise change it to none.
+ * @param ocu - the element you want to hide
+ */
 function ocultar(ocu){
     ocu.style.display= "none"
 }
