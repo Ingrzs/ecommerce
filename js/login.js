@@ -23,15 +23,16 @@ function saveuser(c){
 
 btnlogin.addEventListener("click", function(){
 let savedate = validar(usermail.value,userpassword.value);
-console.log(saveuser(savedate))
-}) 
-
-
-
 if (savedate === usermail.value){
     location.href = "./index.html"
  }
  else{
     location.reload()
  }
+console.log(saveuser(savedate))
+}) 
+
+
+
+
  
