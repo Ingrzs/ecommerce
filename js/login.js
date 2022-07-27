@@ -3,21 +3,26 @@
 
 
 /* Creating an array with an object inside. */
-let user = { name:"ramiro",mail:"portafolio@portafolio.com",password :"thiseasy"}
-
+let user = { name:"ramiro",mail:"por@por.com",password :"this"}
 
 let btnlogin = document.querySelector(".btnlog")
+let formulario = document.querySelector("formulariologin")
+
+function validar(){
+    var usermail = document.querySelector(".usermail").value;
+    var userpassword = document.querySelector(".userpassword").value;  
+    if(usermail == user.mail && userpassword == user.password){
+         window.open("./index.html","_self");
+    }
+    else{
+        alert("incorrecto")
+         clear();
+        }
+}
+
+
 
 btnlogin.addEventListener("click",function(){
-    let usermail = document.querySelector(".usermail").value;
-    let userpassword = document.querySelector(".userpassword").value;
-    console.log(usermail)
-    console.log(userpassword)
-    if(usermail == user.mail && userpassword == user.password){
-        alert("welcome")
-        }
-        else{
-        alert("incorrecto")
-        }
-        
+validar();
+   
 })
