@@ -94,7 +94,7 @@ vistaform.addEventListener('mousemove',function(){
 
 
 let p = document.querySelector(".user")
-if (p === ""){
+if (p.length === 0){
     ocu(p);
 }
 else{
@@ -102,3 +102,6 @@ p.innerHTML = localStorage.getItem('key');
 }
 
 
+window.addEventListener('beforeunload',function(e){
+   localStorage.removeItem('key');
+})
