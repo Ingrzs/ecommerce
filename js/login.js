@@ -15,20 +15,20 @@ function validar(a,b){
 }
 
 function saveuser(c){
-    sessionStorage.setItem('key',c)
-    let Backuser = sessionStorage.getItem('key');
+    localStorage.setItem('key',c)
+    let Backuser = localStorage.getItem('key');
     return Backuser;
 }
 
 
 btnlogin.addEventListener("click", function(){
 let savedate = validar(usermail.value,userpassword.value);
-if (savedate === usermail.value){
-    location.href = "./index.html"
- }
- else{
-    location.reload()
- }
+   if (savedate === usermail.value){
+     location.href = "./index.html"
+    }
+    else{
+     location.reload()
+    }
 console.log(saveuser(savedate))
 }) 
 
