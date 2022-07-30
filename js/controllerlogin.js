@@ -1,11 +1,4 @@
-
-const DataUser = localStorage.getItem('key');
-const OpenSesion = document.querySelector(".opensesion")
-const CloseSesion = document.querySelector(".closesesion")
-
-
-  
-function CheckStorage(a){
+ function CheckStorage(a){
 if (a.length === 0){
    a.style.display = "none" 
 }
@@ -20,3 +13,4 @@ localStorage.removeItem('key');
 })
 }
 
+module.exports = {CheckStorage,DeleteStorage};
