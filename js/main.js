@@ -1,3 +1,6 @@
+var control = require('./controllerlogin');
+
+
 let Inicio = document.querySelector(".logo")
 let BtnLogin = document.querySelector(".btnlogin")
 let BtnConsola = document.querySelector(".btnconsola")
@@ -92,16 +95,18 @@ vistaform.addEventListener('mousemove',function(){
     ocultar(vistalista)
 })
 
-
 let p = document.querySelector(".user")
+control.CheckStorage(p);
+/*
 if (p.length === 0){
     ocu(p);
 }
 else{
-p.innerHTML = localStorage.getItem('key');
+    p.innerHTML = localStorage.getItem('key');
+
 }
 
 
 window.addEventListener('beforeunload',function(e){
    localStorage.removeItem('key');
-})
+})*/
