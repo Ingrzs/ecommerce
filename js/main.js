@@ -1,6 +1,5 @@
-var control = require('./controllerlogin');
-
-
+import { CheckStorage } from './controllerlogin.js' 
+import { DeleteStorage } from './controllerlogin.js'
 let Inicio = document.querySelector(".logo")
 let BtnLogin = document.querySelector(".btnlogin")
 let BtnConsola = document.querySelector(".btnconsola")
@@ -95,17 +94,27 @@ vistaform.addEventListener('mousemove',function(){
     ocultar(vistalista)
 })
 
-let p = document.querySelector(".user")
-control.CheckStorage(p);
+
+let p = document.querySelector(".user");
+let Closesesion = document.querySelector(".cerrarsesion")
+
+p.innerHTML = localStorage.getItem('key')
+
+let v = localStorage.getItem('key')
+
+if(v.length > 0){
+p.style.display = "block"
+Closesesion.style.display = "block"
+}
+
+
+
+
+Closesesion.addEventListener('click',function(){
+   DeleteStorage()
+   location.reload()
+})
 /*
-if (p.length === 0){
-    ocu(p);
-}
-else{
-    p.innerHTML = localStorage.getItem('key');
-
-}
-
 
 window.addEventListener('beforeunload',function(e){
    localStorage.removeItem('key');
