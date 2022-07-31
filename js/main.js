@@ -1,12 +1,17 @@
-import { CheckStorage } from './controllerlogin.js' 
-import { DeleteStorage } from './controllerlogin.js'
+import { CheckStorage } from "./controllerlogin.js"
+import { DeleteStorage} from "./controllerlogin.js"
+
 let Inicio = document.querySelector(".logo")
 let BtnLogin = document.querySelector(".btnlogin")
 let BtnConsola = document.querySelector(".btnconsola")
 let vistalista = document.querySelector(".div_lista")
 let inputsearch = document.querySelector(".searchbar")
 let vistaform = document.querySelector(".formu")
-
+let Showuser = document.querySelector(".showuser");
+let Closesesion = document.querySelector(".cerrarsesion")
+let Boxdatalogin = document.querySelector(".box_datalogin")
+let Getstorage = localStorage.getItem('key')
+Showuser.innerHTML = localStorage.getItem('key')
 const ListaProductos = ["consola","nintendo","play","xbox","control","laptop","celular","start","funko"]
 
 /**
@@ -94,28 +99,11 @@ vistaform.addEventListener('mousemove',function(){
     ocultar(vistalista)
 })
 
-
-let p = document.querySelector(".user");
-let Closesesion = document.querySelector(".cerrarsesion")
-
-p.innerHTML = localStorage.getItem('key')
-
-let v = localStorage.getItem('key')
-
-if(v.length > 0){
-p.style.display = "block"
-Closesesion.style.display = "block"
-}
-
-
-
+/* Checking if there is a value in the local storage. If there is, then it will hide the login button
+and show the user's name. */
+CheckStorage(Getstorage,Boxdatalogin,BtnLogin);
 
 Closesesion.addEventListener('click',function(){
-   DeleteStorage()
+   DeleteStorage()  
    location.reload()
 })
-/*
-
-window.addEventListener('beforeunload',function(e){
-   localStorage.removeItem('key');
-})*/
