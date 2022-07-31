@@ -270,10 +270,13 @@ display: none;
     margin: 0%;
  }
 
- .user,.cerrarsesion{
+ 
+ .box_datalogin{
     display: none;
  }
 
  .cerrarsesion{
     cursor: pointer;
+    font-size: 25px;
+    border:2px solid #2A7AE4;
  }
