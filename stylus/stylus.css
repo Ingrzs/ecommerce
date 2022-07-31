@@ -270,4 +270,10 @@ display: none;
     margin: 0%;
  }
 
- 
+ .user,.cerrarsesion{
+    display: none;
+ }
+
+ .cerrarsesion{
+    cursor: pointer;
+ }
