@@ -1,16 +1,14 @@
- function CheckStorage(a){
-if (a.length === 0){
-   a.style.display = "none" 
-}
-else{
-    OpenSesion.innerHTML= DataUser
+
+function CheckStorage(a,b,c){
+if (a.length > 0){
+   b.style.display = "block"
+   c.style.display = "none"
 }
 }
 
-function DeleteStorage(b){
-b.addEventListener("click",function(){
+function DeleteStorage(){
 localStorage.removeItem('key');
-})
 }
 
-module.exports = {CheckStorage,DeleteStorage};
+export  { CheckStorage };
+export { DeleteStorage };
