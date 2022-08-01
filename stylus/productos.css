@@ -64,6 +64,7 @@ width: 70%;
 }
 
 .box_title button{
+    display: none;
     background-color: #2A7AE4;
     color: #FFFFFF;
     width: 120px;
