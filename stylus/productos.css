@@ -183,3 +183,13 @@ textarea:hover{
     text-align: center;
     line-height: 5%;
  }
+
+ .box_datalogin{
+    display: none;
+ }
+
+ .cerrarsesion{
+    cursor: pointer;
+    font-size: 25px;
+    border:2px solid #2A7AE4;
+ }
