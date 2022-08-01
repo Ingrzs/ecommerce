@@ -1,4 +1,4 @@
-import { CheckStorage } from "./controllerlogin.js"
+import { CheckStorageProducto } from "./controllerlogin.js"
 import { DeleteStorage } from "./controllerlogin.js"
 
 let Agregarproducto = document.querySelector(".btnadd")
@@ -17,4 +17,4 @@ Closesesion.addEventListener('click',function(){
    location.reload()
 })
 
-CheckStorage(Getstorage,Boxdatalogin,Agregarproducto);
+CheckStorageProducto(Getstorage,Boxdatalogin,Agregarproducto);
