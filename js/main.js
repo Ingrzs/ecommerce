@@ -34,6 +34,10 @@ BtnConsola.addEventListener("click",function(){
     Openpage("./productos.html")
 })
 
+//guardando valor que se escribe en el input
+inputsearch.addEventListener("keyup", e => { 
+    const searchString = e.target.value; 
+  });
 
 /* Creating a div, ul, and li element and appending them to the DOM. */
 let div = document.createElement("div");
@@ -56,7 +60,7 @@ cajadeldom.appendChild(div);
  * array.
  * @param array - the array of strings to be displayed in the list
  */
-function searchbar(array){
+/*function searchbar(array){
     let liElemet = "" ;
     for (let i= 0; i < array.length; i++) {
     liElemet += `<li>${array[i]}</li>`
@@ -70,7 +74,8 @@ function searchbar(array){
   * @param event - The event object is a JavaScript event that is sent to an element when an event
   * occurs.
   */
- function filtrar(event) {
+ 
+ /*function filtrar(event) {
     var searchvalue = event.target.value;
     var filterNames = ListaProductos.filter((v)=>{ return(v.includes(searchvalue));
     })
