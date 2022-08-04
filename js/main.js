@@ -4,15 +4,16 @@ import { DeleteStorage} from "./controllerlogin.js"
 let Inicio = document.querySelector(".logo")
 let BtnLogin = document.querySelector(".btnlogin")
 let BtnConsola = document.querySelector(".btnconsola")
-let vistalista = document.querySelector(".div_lista")
-let inputsearch = document.querySelector(".searchbar")
-let vistaform = document.querySelector(".formu")
+
+
 let Showuser = document.querySelector(".showuser");
 let Closesesion = document.querySelector(".cerrarsesion")
 let Boxdatalogin = document.querySelector(".box_datalogin")
 let Getstorage = localStorage.getItem('key')
 Showuser.innerHTML = localStorage.getItem('key')
-const ListaProductos = ["consola","nintendo","play","xbox","control","laptop","celular","start","funko"]
+
+
+
 
 /**
  * It opens a new page.
@@ -35,14 +36,12 @@ BtnConsola.addEventListener("click",function(){
 })
 
 //guardando valor que se escribe en el input
-inputsearch.addEventListener("keyup", e => { 
-    const searchString = e.target.value; 
-  });
+
 
 /* Creating a div, ul, and li element and appending them to the DOM. */
 let div = document.createElement("div");
 div.className="div_lista";
-let ul = document.createElement("ul");
+/*let ul = document.createElement("ul");
 ul.className= "lista";
 div.appendChild(ul);
 
@@ -50,10 +49,22 @@ let li = document.createElement("li");
 li.className= "lista-item";
 ul.appendChild(li);
 li.textContent= ""
+*/
+let boxsearch= document.querySelector(".box_search");
+boxsearch.appendChild(div);
 
-let cajadeldom= document.querySelector(".box_search");
-cajadeldom.appendChild(div);
 
+
+
+let inputsearch = document.querySelector(".inputsearch")
+let div_resultados = document.querySelector(".div_lista")
+const ListaProductos = ["consola","nintendo","play","xbox","control","laptop","celular","start","funko"]
+
+inputsearch.addEventListener("change", escribe);
+
+function escribe(e) {
+    div_resultados.textContent = e.target.value;
+  }
 
 /**
  * It takes an array as an argument, loops through it, and creates a list item for each element in the
@@ -96,13 +107,13 @@ function mostrar(show){
 }
 
 //eventos mostrar u ocultar el div cuando se hace clik  se mueve en el div
-inputsearch.addEventListener('click',function(){
-mostrar(vistalista)
-})
+//inputsearch.addEventListener('click',function(){
+//mostrar(vistalista)
+//})
 
-vistaform.addEventListener('mousemove',function(){
-    ocultar(vistalista)
-})
+//vistaform.addEventListener('mousemove',function(){
+//    ocultar(vistalista)
+//})
 
 /* Checking if there is a value in the local storage. If there is, then it will hide the login button
 and show the user's name. */
