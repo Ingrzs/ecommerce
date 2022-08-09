@@ -1,7 +1,7 @@
 
 function CheckStorage(a,b,c){
 if (a.length > 0){
-   b.style.display = "block"
+   b.style.display = "flex"
    c.style.display = "none"
 }
 }
