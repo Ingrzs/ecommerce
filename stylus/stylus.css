@@ -282,8 +282,11 @@ textarea:hover{
     display: none;
  }
 
+ .box_datalogin p{
+  margin-left: 10px;
+ }
+
 .cerrarsesion{
     cursor: pointer;
-    font-size: 25px;
-    border:2px solid #2A7AE4;
+    color: #2A7AE4;
  }
